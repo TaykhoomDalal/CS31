@@ -1,0 +1,4 @@
+In the recommendMove function, your function was supposed to account for if there was more than one vampire at a spot close to you,
+as there would be a higher likelihood that one of those would move towards a spot. I only accounted for whether there was a vampire
+at a spot, not whether there was more than one.
+-2 points.
