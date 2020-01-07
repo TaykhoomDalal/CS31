@@ -1,0 +1,39 @@
+CS 31 Project 1 Report
+
+Based on step 5 of the CS 31 project specifications, I executed the program in the file
+“original.cpp” with the following integers to try and produce “incorrect, unusual, or
+nonsensical output.” After I inputted the integer 2 for the first question, “How many people were
+surveyed?”, I inputted 1,234 for both of the following questions “How many support/oppose
+impeachment of the president” and the program outputted “61700.0%” for the percent of people
+that support and oppose impeachment. I also inputted the integer 0 for the first question,
+following this up with 2 for the second question and 2 for the third question. In response, the
+program outputted “inf%” for the percent of people that support and oppose impeachment.
+Additionally, I inputted the integer -10 for the first question, as well as 4 for the second and third
+question, which resulted in the program outputting “-40%” for the percent of people that support
+and oppose impeachment. It was also interesting to note that with all the abnormal outputs that
+the program displayed, the program also always displayed the following statement: “More
+people oppose impeachment than support it”, even if it was not true.
+
+Based on step 6 of the CS 31 project specifications, I executed the program in the file
+“logic_error.cpp” with the following modifications to cause the program “to produce incorrect
+results from reasonable input.” I made a change at the line “double pctFor = 100.0 *
+forImpeachment / numberSurveyed;”, changing the 100.0 to a 10.0 in order to simulate a probable
+mistake that someone might make. After making this change, when I inputted the integer 20 as
+the answer to the first question and 10 to the answer to the two following questions, the program
+had the output as “5.0%” for the percent of people who supported impeachment and “50.0%” for
+the percent of people who were against impeachment. I also made a change at the line “double
+pctAnti = 100.0 * antiImpeachment / numberSurveyed”, changing the * sign to a + sign as
+another probable mistake that someone could make while coding quickly. After making this
+change, when I inputted the integer 20 as the answer to the first question and 10 to the answer to
+the two following questions, the program had the output as “5.0%” for the percent of people who
+supported impeachment and “100.0%” for the percent of people who were against impeachment.
+
+Based on step 7 of the CS 31 project specifications, I executed the program in the file
+“compile_error.cpp” with the following modifications to “cause the program to fail to compile
+correctly.” I made a change at the line “cout &lt;&lt; &quot;How many people were surveyed? &quot;;”,
+removing the semicolon at the end of the line, to which the IDE outputted the error “syntax
+error: missing ‘;’ before identifier ‘cin’” and g31 outputted the error “error: expected &#39;;&#39; before
+&#39;cin&#39;.” I also made a change at the line “cin &gt;&gt; forImpeachement;”, adding an extra e to the
+variable forImpeachment, to which the IDE outputted the error “identifier “forImpeachement” is
+undefined” and g31 outputted the error “error: &#39;forImpeachement&#39; was not declared in this
+scope;.”
