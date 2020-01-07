@@ -1,0 +1,2 @@
+Forgot to account for if the autograder program would start the position outside of the grid, and then make it move into the grid.
+-4 points.
